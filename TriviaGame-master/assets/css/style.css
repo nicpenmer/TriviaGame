@@ -1,0 +1,97 @@
+body{
+
+    font-family: 'Raleway', sans-serif;
+    background-image: url("../images/background2.jpg");
+    height: 100%; 
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover;      
+}
+
+h1{
+    font: 14px;
+    align-content: center;
+    background:#D4AF37;
+    padding: 20px;
+    border-radius: 20px;
+    width: auto;
+    margin: 20px;
+}
+
+#start{
+    background: #D4AF37;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 20px;
+    width: auto;
+    color: black;
+    overflow: auto;
+    text-align: left;
+}
+
+#time{
+    color: black;
+    text-align: center;
+    font-size: 18px;
+}
+
+#rules{
+    background: #D4AF37;
+    margin: 20px;
+    overflow: auto;
+    padding: 20px;
+    border-radius: 20px;
+    width: auto;
+    font-size: 16px;
+}
+
+.container{
+    justify-content: center;
+}
+
+#quiz{
+    margin: 20px;
+    padding: 40px;
+    background: #D4AF37;
+    width: auto;
+    float: left;
+    height:750px;
+    border-radius: 20px;
+    font-size: 16px;
+}
+
+
+#afterSubmit{
+    float: right;
+    margin: 20px;
+    margin-top: 75px;
+    padding: 40px;
+    background: #D4AF37;
+    width: auto;
+    border-radius: 20%;
+}
+
+#timer{
+    background: #D4AF37;
+    overflow: auto;
+    border-radius: 20px;
+}
+
+
+.button{
+background: black;
+color: white;
+font-size: 16px;
+border-radius: 20px;
+float: left;
+border: none;
+padding: 10px;
+}
+
+#button:hover{
+background: white;
+color: black;
+border-color: black; 
+border: 2px;
+cursor: pointer;
+}

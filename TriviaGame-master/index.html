@@ -1,0 +1,126 @@
+<html>
+
+<head>
+    <title>Trivia Quiz</title>
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/javascript/app.js"></script>
+</head>
+
+<body>
+    <h1>What will you Drink?</h1>
+    <div class="container">
+        <div class="row" id="rules">
+            <h2 id="How">How to play: </h2>
+            <p>You will be given the ingredients for a classic cocktail, from the multiple choice options, select the correct
+                cocktail that those ingredients make. Hit the "Start" button to play!</p>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row" id="start">
+            <div class="col-md-6">
+                <input class="button" id="button" type="submit" value="Start Game!" onclick="startGame();">
+                <div id="timer">
+                    <span>
+                        <span>
+                            <p id="time"></p>
+                        </span>
+                    </span>
+                    <img id="shakerTimer">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <form id="quiz" name="quiz">
+            <div class="row" id="#questions">
+                <div class "col-med-6">
+                    <div id="question1">
+                        <span id="q1">Whiskey, Sweet Vermouth, Bitters. </span>
+                        <div id="answers">
+                            <form>
+                                <input type="radio" id="mc" name="question1" value="Manhattan"> Manhattan
+                                <br>
+                                <input type="radio" id="mc" name="question1" value="Old Fashioned"> Old Fashioned
+                                <br>
+                                <input type="radio" id="mc" name="question1" value="Shirley Temple"> Shirley Temple
+                            </form>
+                        </div>
+                    </div>
+                    <br>
+                    <div id="question2">
+                        <span id="q2"> Rum, Lime, Mint, Sugar, Soda. </span>
+                        <div id="answers">
+                            <form>
+                                <input type="radio" id="mc" name="question2" value="Mosquito">Mosquito
+                                <br>
+                                <input type="radio" id="mc" name="question2" value="Mojito"> Mojito
+                                <br>
+                                <input type="radio" id="mc" name="question2" value="Daiquiri"> Daiquiri
+                            </form>
+                        </div>
+                    </div>
+                    <div id="question3">
+                        <span id="q3">Campari, Gin, Sweet Vermouth </span>
+                        <div id="answers">
+                            <form>
+                                <input type="radio" id="mc" name="question3" value="Boulevardier"> Boulevardier
+                                <br>
+                                <input type="radio" id="mc" name="question3" value="Aviation"> Aviation
+                                <br>
+                                <input type="radio" id="mc" name="question3" value="Negroni"> Negroni
+                            </form>
+                        </div>
+                    </div>
+                    <div id="question4">
+                        <span id="q4">Tequila, Triple Sec, Lime </span>
+                        <div id="answers">
+                            <form>
+                                <input type="radio" id="mc" name="question4" value="Painkiller"> Painkiller
+                                <br>
+                                <input type="radio" id="mc" name="question4" value="Mojito"> Mojito
+                                <br>
+                                <input type="radio" id="mc" name="question4" value="Margarita"> Margarita
+                            </form>
+                        </div>
+                    </div>
+                    <div id="question5">
+                        <span id="q5">Gin, Lime, Simple Syrup</span>
+                        <div id="answers">
+                            <form>
+                                <input type="radio" id="mc" name="question5" value="Aviation"> Aviation
+                                <br>
+                                <input type="radio" id="mc" name="question5" value="Gimlet"> Gimlet
+                                <br>
+                                <input type="radio" id="mc" name="question5" value="Moscow-Mule">Moscow Mule
+                            </form>
+                        </div>
+                    </div>
+                    <div id="question6">
+                        <span id="q6">Whiskey, Orange, Cherry, Sugar</span>
+                        <div id="answers">
+                            <form>
+                                <input type="radio" id="mc" name="question6" value="RobRoy"> Rob Roy
+                                <br>
+                                <input type="radio" id="mc" name="question6" value="WhiskeySour"> Whiskey Sour
+                                <br>
+                                <input type="radio" id="mc" name="question6" value="OldFashioned"> Old Fashioned
+                            </form>
+                        </div>
+                    </div>
+                    <input class="button" id="button2" type="submit" value="Bottoms up!" onclick="check();">
+                </div>
+        </form>
+        <div class="col-md-6">
+            <div class="postSubmit" id="afterSubmit">
+                <p id="message"></p>
+                <p id="numberCorrect">Correct:</p>
+                <img id="picture">
+            </div>
+        </div>
+        </div>
+    </div>
+</body>
+</html>
